@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./assets/JokenPô.png");
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 100px;
+    background-color: #d6bedd;
+    border-radius: 15px;
+
+
+    position: fixed;
+    top: 25px
+        /*Y*/
+    ;
+    left: 565px
+        /*X*/
+    ;
+    border: 10px solid
+        /*#19021f*/
+        #00005f;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    margin: 25px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    /* padding: 5px; */
+    font-size: 60px;
+    cursor: pointer;
+    border: 5px solid
+        /*#19021f*/
+        #00005f;
+    border-radius: 15px;
+    transition: opacity 1s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#rock {
+    background-color: #a200ff;
+}
+
+#paper {
+    background-color: #9ee01a;
+}
+
+#scissors {
+    background-color: #7dbeed;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 15px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 300px) {
+
+    body {
+        background: none;
+        background: aqua;
+
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
